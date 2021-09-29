@@ -1,0 +1,146 @@
+.movieinfo {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  animation: animateMovieinfo 1s;
+  text-align: left;
+}
+
+@keyframes animateMovieinfo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.movieinfo-content {
+  max-width: 1280px;
+  min-height: 450px;
+  margin: 0 auto;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 10px;
+  position: relative;
+}
+
+
+
+.movieinfo-thumb {
+  width: 300px;
+  float: left;
+  margin-right: 6rem;
+}
+
+.movieinfo-text {
+  /* font-family: Arial, Helvetica, sans-serif;
+  padding: 40px; */
+  padding: 4rem 0 2rem;
+  color: #fff;
+  overflow: hidden;
+  width: 55%;
+  /* background-color: red; */
+}
+
+.movieinfo-text h1 {
+  /* font-family: 'Abel', sans-serif;
+  font-size: 48px; */
+  font-size: 3rem;
+  margin: 0;
+}
+
+.movieinfo-text h3 {
+  font-size: 16px;
+  line-height: 0;
+  /* margin-top: 30px; */
+  
+}
+
+.movieinfo-text p {
+  /* font-family: 'Abel', sans-serif; */
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.rating-director {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #16d47b; */
+  padding: 0;
+}
+.rating {
+  /* width: 190px;
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #16d47b; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+
+/* .rating-text h3{
+  text-align: center;
+} */
+
+/* .score {
+  position: absolute;
+  margin: 0;
+  right: -20px;
+  top: -3px;
+} */
+.score {
+  margin: 0;
+}
+.director {
+  margin: 0;
+}
+
+.fa-film {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+}
+
+meter::-webkit-meter-bar {
+  background: #fff;
+  width: 70px;
+}
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(to bottom, #16d47b) !important;
+}
+meter::-webkit-meter-suboptimum-value {
+  background: linear-gradient(to bottom, #fbb450) !important;
+}
+meter::-webkit-meter-even-less-good-value {
+  background: linear-gradient(to bottom, #ee5f5b) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .movieinfo-text h1 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieinfo {
+    min-height: 600px;
+    height: auto;
+  }
+
+  .movieinfo-thumb {
+    width: 100% !important;
+  }
+
+  .fa-film {
+    display: none;
+  }
+
+  .movieinfo-text h1 {
+    font-size: 32px;
+  }  
+}

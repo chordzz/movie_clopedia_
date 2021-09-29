@@ -1,0 +1,19 @@
+/* .moviethumb {
+  max-height:  60%;
+} */
+
+.moviethumb img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { React, Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Header from "./components/header/header-component.jsx";
+import Home from "./pages/home/home.component.jsx";
+import Movie from "./pages/movie/movie.component.jsx";
+import NotFound from "./pages/not-found/not-found.component.jsx";
+
+import "./App.css";
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          {/* <Header /> */}
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route exact path="/not-available" component={NotFound}  />
+            <Route path="/:movieId" component={Movie} />
+            
+          </Switch>
+        </div>
+      </BrowserRouter>
+      // 299536
+      // <div className="App">
+
+      //   <Header />
+      //   <Home />
+      //   <Movie />
+      // </div>
+    );
+  }
+}
+
+App.propTypes = {
+  movieId: PropTypes.number,
 }
 
 export default App;
