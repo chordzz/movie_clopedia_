@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/movie_clopedia_/static/css/main.de08cc9c.chunk.css",
-    "main.js": "/movie_clopedia_/static/js/main.8b47a1aa.chunk.js",
-    "main.js.map": "/movie_clopedia_/static/js/main.8b47a1aa.chunk.js.map",
+    "main.js": "/movie_clopedia_/static/js/main.721e4d81.chunk.js",
+    "main.js.map": "/movie_clopedia_/static/js/main.721e4d81.chunk.js.map",
     "runtime-main.js": "/movie_clopedia_/static/js/runtime-main.63171147.js",
     "runtime-main.js.map": "/movie_clopedia_/static/js/runtime-main.63171147.js.map",
     "static/js/2.d2fd7df1.chunk.js": "/movie_clopedia_/static/js/2.d2fd7df1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.63171147.js",
     "static/js/2.d2fd7df1.chunk.js",
     "static/css/main.de08cc9c.chunk.css",
-    "static/js/main.8b47a1aa.chunk.js"
+    "static/js/main.721e4d81.chunk.js"
   ]
 }
