@@ -16,9 +16,9 @@ class App extends Component {
         <div className="App">
           {/* <Header /> */}
           <Switch>
-            <Route path="/" component={Home} exact />
+            <Route path="/movie_clopedia_" component={Home} exact />
             <Route exact path="/not-available" component={NotFound}  />
-            <Route path="/:movieId" component={Movie} />
+            <Route path="/movie_clopedia_/:movieId" component={Movie} />
             
           </Switch>
         </div>
